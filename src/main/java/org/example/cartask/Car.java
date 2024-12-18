@@ -1,5 +1,10 @@
 package org.example.cartask;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class Car implements InterfaceCar{
 
     private String name;
@@ -8,15 +13,6 @@ public class Car implements InterfaceCar{
     }
 
     public Car(String name) {
-        this.name = name;
-    }
-
-    @Override
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
         this.name = name;
     }
 
