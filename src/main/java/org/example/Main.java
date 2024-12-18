@@ -1,13 +1,12 @@
 package org.example;
 
-import org.example.computertask.Computer;
-import org.example.computertask.Monitor;
+import org.example.solid.depinvers.BestManager;
+import org.example.solid.depinvers.IManager;
+import org.example.solid.depinvers.JavaDev;
 
 public class Main {
     public static void main(String[] args) {
-        Computer computer = new Computer("Acer", new Monitor("Asus"));
-
-        computer.on();
-        computer.off();
+        IManager manager = new BestManager();
+        manager.speak(new JavaDev());
     }
 }
